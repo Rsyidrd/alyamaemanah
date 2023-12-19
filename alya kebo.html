@@ -4,32 +4,36 @@
 
 <head>
   <meta charset="UTF-8">
-   <title>created by rashid</title>
-    <link rel="stylesheet" href="css/style.css">
-     </head>
-      <body>
-       <a href="" style="text-decoration:none;color:white;">
-      
-    </a>
-         </div>
-         <div class="stars">
-            <center>
-              <h1>"Terimakasih Alya Maemanah"</h1>
-             </center>
-         </div>
-         <div class="twinkling">
-            <center><br><br><br>
-           <img src="" width="250"/><br>
-         <div class="container">
-        <div class="text"></div>
-       </div><br><br><br>
-       <font face="Sarpanch" color="white" size"10" class="message">
-       <font color="red"></font>
-     </font><br>
-        <font face="Sarpanch" color="white" size"10" class="message"> 
-       <font color="red"></font><br><br>
-      <font face="Play">
-   
+  <title>created by rashid </title>
+ 
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div style="position: fixed; top: 75px; left: -225px; width: 600px; padding: 10px; font-size: 24px; text-align: center; color: white; font-family: 'trebuchet ms', verdana, arial, sans-serif;transform: rotate(-45deg);transform-origin: 50% 0px;-o-transform: rotate(-45deg); -o-transform-origin: 50% 0px;-moz-transform: rotate(-45deg); -moz-transform-origin: 50% 0px; -webkit-transform: rotate(-45deg); -webkit-transform-origin: 50% 0px; background-color: Transparent; border: 1px solid rgb(170, 170, 170); z-index: 9999; opacity: 0.5;"><a href="" style="text-decoration:none;color:white;"></a></div>
+<div class="stars">
+  <center>
+    <h1>"Pelanggan terakhir di kedai geprek sederhana"</h1>
+  </center>
+</div>
+<div class="twinkling">
+  <center><br><br><br>
+    <img src="" width="250"/><br>
+    <div class="container">
+      <div class="text"></div>
+    </div><br><br><br>
+    <font face="Sarpanch" color="white" size"10" class="message">
+     <font color="red"></font>
+    </font><br>
+    <font face="Sarpanch" color="white" size"10" class="message"> <font color="red"></font><br><br>
+    <font face="Play">
+      <p class="we-are"><b><font color="cyan"><font color="white">;</b></p>
+    </font>
   </center>
 </div>
 <div class="clouds">
@@ -60,7 +64,7 @@ h1{
     text-align: center;
     color: white;
     font-family: Nosifer;
-    text-shadow: 0 0 0.5em white, 0 0 0.5em white;
+    text-shadow: 0 0 0.5em red, 0 0 0.5em red;
 }
 
 .we-are {
@@ -357,7 +361,7 @@ h1{
 class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '0101010101'
+    this.chars = '!@#$%^&*()_-=+{}:"|<>?,./;'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -368,8 +372,8 @@ class TextScramble {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || ''
       const to = newText[i] || ''
-      const start = Math.floor(Math.random() * 100)
-      const end = start + Math.floor(Math.random() * 100)
+      const start = Math.floor(Math.random() * 40)
+      const end = start + Math.floor(Math.random() * 40)
       this.queue.push({ from, to, start, end })
     }
     cancelAnimationFrame(this.frameRequest)
@@ -409,10 +413,10 @@ class TextScramble {
 }
 
 const phrases = [
-  'Makasi ngak tau kabar alya gimana',
-  'Kangen banget ',
-  'Kalo bukan karna ketulusan',
-  'Enggak mungkin saya sejauh ini','Apa si alesan di balik semua ini','Kaya tujuan kita tuh apa','Rasyid ngerasa kita jalan di tempat tanpa tujuan'
+  'Aku suguhan kau perasaaku.',
+  'Sepiring penuh kau habiskan tanpa sisa.',
+  'Hatimu mencubit kekenyangan.',
+  'Sialnya, kau pergi tanpa menyisakan,','Makanan untuk kusuguhi ke orang lain.,'
   
 ]
 
@@ -433,7 +437,7 @@ next()
 
 var app = {
 
-  chars: ['cuma temen','sumpah rasyid jahat banget','udah engak ada apa apa lagi sama dia lasing','ngak mau ngemis sedetik waktu alya lagi yah','','maaf','','sepelein aja terus','iya rasyid','ngerasa kebuang lagi','Janji ini jak enggak saya ulagin','Cuma mau waktu alya beberapaa detik aja tau','rasyid kenpa','belom move on ngapain nyari rumah baru','kan rasyid udah bosen','rasyid yg bikin gitu sendiri','ngak jadi dah','sakit,sakit banget tau','Rasyid kan ngak penting','kangen','Selagi masih bisa di salahin, salahin aja rasyid','terserah rasyid udah'],
+  chars: ['cuma temen smp','sumpah rasyid jahat','udah engak ada apa apa lagi sama dia lasing','berisik!!','','maaf','','sakit banget tau','iya rasyid','dih','Janji ini jak saya ulagin','Banyak cowo yang saya like','rasyid kenpa','ngak mungkin saya unfoll','belom move on ngapain nyari rumah baru','kan rasyid udah bosen','saya rela ulfoll cowo cowo di ig demi rasyid','ngak jadi dah','rahasia'],
 
   init: function () {
     app.container = document.createElement('div');
@@ -465,4 +469,4 @@ var app = {
 };
 
 document.addEventListener('DOMContentLoaded', app.init);
-  </script>
+</script>
